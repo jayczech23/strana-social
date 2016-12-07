@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import Firebase
 
-class ViewController: UIViewController {
 
+
+class SignInVC: UIViewController {
+
+    
+//-----------------------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
 
-
+//-----------------------------------------------------------------
+  
 
 }
 

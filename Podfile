@@ -10,6 +10,7 @@ target 'Strana-Social' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'IQKeyboardManagerSwift'
 
   target 'Strana-SocialTests' do
     inherit! :search_paths
