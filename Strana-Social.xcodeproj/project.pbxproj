@@ -14,6 +14,7 @@
 		55209E951DF7B59300811CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55209E931DF7B59300811CF1 /* LaunchScreen.storyboard */; };
 		55209EA01DF7B59300811CF1 /* Strana_SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55209E9F1DF7B59300811CF1 /* Strana_SocialTests.swift */; };
 		55209EAB1DF7B5A500811CF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55209EAA1DF7B5A500811CF1 /* GoogleService-Info.plist */; };
+		5580296A1DF890B50090AD1B /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558029691DF890B50090AD1B /* FancyView.swift */; };
 		63463B626024B3A3CA549999 /* Pods_Strana_SocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31E27C395B712D5F285857C /* Pods_Strana_SocialTests.framework */; };
 		6DC21DC420ED2F873348DB07 /* Pods_Strana_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF86EFE205B32609CCAAFA5C /* Pods_Strana_Social.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		55209E9F1DF7B59300811CF1 /* Strana_SocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strana_SocialTests.swift; sourceTree = "<group>"; };
 		55209EA11DF7B59300811CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55209EAA1DF7B5A500811CF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		558029691DF890B50090AD1B /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		7BFD21CD1E3F49C8FD5DEC4F /* Pods-Strana-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strana-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Strana-Social/Pods-Strana-Social.release.xcconfig"; sourceTree = "<group>"; };
 		CF86EFE205B32609CCAAFA5C /* Pods_Strana_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Strana_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34A45521FF72226F7854759 /* Pods-Strana-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strana-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Strana-Social/Pods-Strana-Social.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		558029671DF7BC860090AD1B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				558029691DF890B50090AD1B /* FancyView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			files = (
 				55209E8D1DF7B59300811CF1 /* SignInVC.swift in Sources */,
 				55209E8B1DF7B59300811CF1 /* AppDelegate.swift in Sources */,
+				5580296A1DF890B50090AD1B /* FancyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
