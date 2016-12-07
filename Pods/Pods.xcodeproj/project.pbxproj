@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8229C37B0D32B3DA99386595D834D872 /* Pods-Strana-SocialTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F83223FF724D80486C7A620E08B0425B /* Pods-Strana-SocialTests-dummy.m */; };
+		8A95AEEE3CCBC035EA17D1AA765EAAE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		ADA4AF5E6E9A9D3E40BCFA61FEAB515B /* Pods-Strana-SocialTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 792D7E1121DC512FD3F5CDF0EF96D131 /* Pods-Strana-SocialTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F81D3D89F266F97071022A43A3F88F06 /* Pods-Strana-Social-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91AE61E10143B3A0CE4B470BE475C1D5 /* Pods-Strana-Social-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA3E871E45C49C246B0F42E6ECECAD9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FC8EC37AE8FB03EE832D6247618FA17C /* Pods-Strana-Social-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A146E255AC89F9A9207AA821BC26D0 /* Pods-Strana-Social-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		002E5D18A7AAF7A35E824467DC242E0C /* Pods-Strana-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Strana-Social.release.xcconfig"; sourceTree = "<group>"; };
+		03F10EA88AB373ECF1F216F26159D846 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		112B36E4009B505BB36E1988475AF66D /* Pods-Strana-Social-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Strana-Social-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2FCDE0EE48C3CFF1B393E3E619EDBDE8 /* Pods-Strana-SocialTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Strana-SocialTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4005E61E839AFE8BEF0D73D8F5B5C8E8 /* Pods-Strana-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Strana-Social.debug.xcconfig"; sourceTree = "<group>"; };
+		4FF99C21031CEFC9D3910E0920CAED9E /* Pods-Strana-Social-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Strana-Social-acknowledgements.plist"; sourceTree = "<group>"; };
+		58C97373523E423A714D2F0EE4F3DB8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB48170127C7031A7C47F66FB693571 /* Pods-Strana-SocialTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Strana-SocialTests-frameworks.sh"; sourceTree = "<group>"; };
+		5D9F0329E74FEA7FA74623B4615EA437 /* Pods-Strana-SocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Strana-SocialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		667DFC9C3CA7BD538FDCF7C6E44A1C5D /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		6AD394DCA02FB1FE4E2E90FB7BF273F8 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		71C74BEBF58592B916A9DCF666828279 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		75B9865F261B7E0F7CA604F67CE99CA9 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		792D7E1121DC512FD3F5CDF0EF96D131 /* Pods-Strana-SocialTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Strana-SocialTests-umbrella.h"; sourceTree = "<group>"; };
+		83124710400FDE4C70E513A7048134A8 /* Pods_Strana_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Strana_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A146E255AC89F9A9207AA821BC26D0 /* Pods-Strana-Social-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Strana-Social-dummy.m"; sourceTree = "<group>"; };
+		843F08F57AE17E2B209D28C24DDA797C /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		853A7225D29401F1913C189FFE1F2832 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		860C74FB62067F5D65F6C98BD0B95894 /* Pods_Strana_SocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Strana_SocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B25A7B12801E2EAEBEC15B93C83BCB1 /* Pods-Strana-SocialTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Strana-SocialTests-resources.sh"; sourceTree = "<group>"; };
+		91AE61E10143B3A0CE4B470BE475C1D5 /* Pods-Strana-Social-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Strana-Social-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95B4AC6B533BF87CF043336C53AD9529 /* Pods-Strana-SocialTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Strana-SocialTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		97A34B4C3F5584614D519AA87E49E5D2 /* Pods-Strana-SocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Strana-SocialTests.release.xcconfig"; sourceTree = "<group>"; };
+		983F8C7C7A75764535B745EBBAD0A016 /* Pods-Strana-SocialTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Strana-SocialTests.modulemap"; sourceTree = "<group>"; };
+		A876B34B433B69A3E0C00C4221371B88 /* Pods-Strana-Social.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Strana-Social.modulemap"; sourceTree = "<group>"; };
+		A98CA22A9B956C34F849E733130B6A35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38AFC64546F2C693709E36A6A434CB8 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4C6A902919E21ACC8720E5AB1C0747D /* Pods-Strana-Social-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Strana-Social-frameworks.sh"; sourceTree = "<group>"; };
+		D56ED780ADBC5788CA821514FBBCAAED /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		D9F8BB89EC1E030F12204A51D039AFD4 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		DE0F29B2CDF5157CB6689A162FA014DD /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		DE75EB25212430477216F64B434EC05B /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		F83223FF724D80486C7A620E08B0425B /* Pods-Strana-SocialTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Strana-SocialTests-dummy.m"; sourceTree = "<group>"; };
+		FE97DD4DE35110EC203941332C191021 /* Pods-Strana-Social-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Strana-Social-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A296AC66972F24BEE744386ECF8F8D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A95AEEE3CCBC035EA17D1AA765EAAE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA38B018FF3EAC21FF06038D13608045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3E871E45C49C246B0F42E6ECECAD9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05969CE8C814626DCF7C18FB1EE854FB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE0F29B2CDF5157CB6689A162FA014DD /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		17A6876C1816074FCED219127BC80727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83124710400FDE4C70E513A7048134A8 /* Pods_Strana_Social.framework */,
+				860C74FB62067F5D65F6C98BD0B95894 /* Pods_Strana_SocialTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B692150D33B79277843F33D2BEAF06A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FB260D6007E115B8E413A01AD72F21F /* Pods-Strana-Social */,
+				A90B30EE771317E2E29B3500AE848722 /* Pods-Strana-SocialTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1C4D490A81F158DDAB65E7CC8D90A85F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D56ED780ADBC5788CA821514FBBCAAED /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FABECECE6B18939A36A0C90C111D241 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				A1A30BEF334710E8C6ABEC7DE75E9B61 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		33864FFF651E0EF55A0E9AC7F8E255A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71C74BEBF58592B916A9DCF666828279 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33AD4E002635D77A439F00FC267CF60D /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				05969CE8C814626DCF7C18FB1EE854FB /* Core */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		461E182EAF50BF3E14D161601601DFF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AD394DCA02FB1FE4E2E90FB7BF273F8 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51C2AF5031C03E9F970C87F710EA4957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B38AFC64546F2C693709E36A6A434CB8 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56DCD628FD16E5E16E59FA494B4D75AA /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				51C2AF5031C03E9F970C87F710EA4957 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		584F196128203ECD401A7FAF9F5EEA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				667DFC9C3CA7BD538FDCF7C6E44A1C5D /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FB260D6007E115B8E413A01AD72F21F /* Pods-Strana-Social */ = {
+			isa = PBXGroup;
+			children = (
+				A98CA22A9B956C34F849E733130B6A35 /* Info.plist */,
+				A876B34B433B69A3E0C00C4221371B88 /* Pods-Strana-Social.modulemap */,
+				112B36E4009B505BB36E1988475AF66D /* Pods-Strana-Social-acknowledgements.markdown */,
+				4FF99C21031CEFC9D3910E0920CAED9E /* Pods-Strana-Social-acknowledgements.plist */,
+				83A146E255AC89F9A9207AA821BC26D0 /* Pods-Strana-Social-dummy.m */,
+				D4C6A902919E21ACC8720E5AB1C0747D /* Pods-Strana-Social-frameworks.sh */,
+				FE97DD4DE35110EC203941332C191021 /* Pods-Strana-Social-resources.sh */,
+				91AE61E10143B3A0CE4B470BE475C1D5 /* Pods-Strana-Social-umbrella.h */,
+				4005E61E839AFE8BEF0D73D8F5B5C8E8 /* Pods-Strana-Social.debug.xcconfig */,
+				002E5D18A7AAF7A35E824467DC242E0C /* Pods-Strana-Social.release.xcconfig */,
+			);
+			name = "Pods-Strana-Social";
+			path = "Target Support Files/Pods-Strana-Social";
+			sourceTree = "<group>";
+		};
+		742B07204B882769A21A8F1AABFDC380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				843F08F57AE17E2B209D28C24DDA797C /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9060B306DA2FFF9E9431F331F6716F6E /* Pods */,
+				17A6876C1816074FCED219127BC80727 /* Products */,
+				1B692150D33B79277843F33D2BEAF06A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80201464BFA8DA0E3B48C876F406F1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE75EB25212430477216F64B434EC05B /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9060B306DA2FFF9E9431F331F6716F6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33AD4E002635D77A439F00FC267CF60D /* Firebase */,
+				56DCD628FD16E5E16E59FA494B4D75AA /* FirebaseAnalytics */,
+				D5F0619D4A07F01C91751B552D91F234 /* FirebaseAuth */,
+				9BE87193F008AF3FAE86C574EC50E8B0 /* FirebaseCore */,
+				2FABECECE6B18939A36A0C90C111D241 /* FirebaseDatabase */,
+				C86FC21F4C24884026C23771428DA03C /* FirebaseInstanceID */,
+				B37586A847B1F296909CF2B55986F2D8 /* FirebaseStorage */,
+				A02112CE2F63A84C041084D28ED2C69B /* GoogleInterchangeUtilities */,
+				FEFA282458228D518E048E72E89AF37C /* GoogleNetworkingUtilities */,
+				A9CF4FC6CB26C05886D6FD55FF95A4EA /* GoogleSymbolUtilities */,
+				9B868F9FEB46D3020035A87F5329FC19 /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B868F9FEB46D3020035A87F5329FC19 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C988137323ABA327F03FE45C4CD6A62F /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		9BE87193F008AF3FAE86C574EC50E8B0 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7CC3FE88626C6319416821DD26BC /* Frameworks */,
+			);
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		A02112CE2F63A84C041084D28ED2C69B /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				584F196128203ECD401A7FAF9F5EEA7F /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		A1A30BEF334710E8C6ABEC7DE75E9B61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F8BB89EC1E030F12204A51D039AFD4 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A90B30EE771317E2E29B3500AE848722 /* Pods-Strana-SocialTests */ = {
+			isa = PBXGroup;
+			children = (
+				58C97373523E423A714D2F0EE4F3DB8C /* Info.plist */,
+				983F8C7C7A75764535B745EBBAD0A016 /* Pods-Strana-SocialTests.modulemap */,
+				2FCDE0EE48C3CFF1B393E3E619EDBDE8 /* Pods-Strana-SocialTests-acknowledgements.markdown */,
+				95B4AC6B533BF87CF043336C53AD9529 /* Pods-Strana-SocialTests-acknowledgements.plist */,
+				F83223FF724D80486C7A620E08B0425B /* Pods-Strana-SocialTests-dummy.m */,
+				5BB48170127C7031A7C47F66FB693571 /* Pods-Strana-SocialTests-frameworks.sh */,
+				8B25A7B12801E2EAEBEC15B93C83BCB1 /* Pods-Strana-SocialTests-resources.sh */,
+				792D7E1121DC512FD3F5CDF0EF96D131 /* Pods-Strana-SocialTests-umbrella.h */,
+				5D9F0329E74FEA7FA74623B4615EA437 /* Pods-Strana-SocialTests.debug.xcconfig */,
+				97A34B4C3F5584614D519AA87E49E5D2 /* Pods-Strana-SocialTests.release.xcconfig */,
+			);
+			name = "Pods-Strana-SocialTests";
+			path = "Target Support Files/Pods-Strana-SocialTests";
+			sourceTree = "<group>";
+		};
+		A9CF4FC6CB26C05886D6FD55FF95A4EA /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				80201464BFA8DA0E3B48C876F406F1B2 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		B37586A847B1F296909CF2B55986F2D8 /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				1C4D490A81F158DDAB65E7CC8D90A85F /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C86FC21F4C24884026C23771428DA03C /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				853A7225D29401F1913C189FFE1F2832 /* FIRInstanceID.h */,
+				461E182EAF50BF3E14D161601601DFF0 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		C988137323ABA327F03FE45C4CD6A62F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75B9865F261B7E0F7CA604F67CE99CA9 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5F0619D4A07F01C91751B552D91F234 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				742B07204B882769A21A8F1AABFDC380 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		EF5A7CC3FE88626C6319416821DD26BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03F10EA88AB373ECF1F216F26159D846 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEFA282458228D518E048E72E89AF37C /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				33864FFF651E0EF55A0E9AC7F8E255A4 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D21C275026B4CC5D9D1F50EB1DF6C44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA4AF5E6E9A9D3E40BCFA61FEAB515B /* Pods-Strana-SocialTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1E1110D0434724350CECC0F80D3760 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81D3D89F266F97071022A43A3F88F06 /* Pods-Strana-Social-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0E3D25C89D17C81DD8EED68E409A7339 /* Pods-Strana-Social */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA870FA4318A3D08DD0E35FC9AC20747 /* Build configuration list for PBXNativeTarget "Pods-Strana-Social" */;
+			buildPhases = (
+				05B6A15EB6A4F78FF203177324784DC1 /* Sources */,
+				A296AC66972F24BEE744386ECF8F8D4F /* Frameworks */,
+				CD1E1110D0434724350CECC0F80D3760 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Strana-Social";
+			productName = "Pods-Strana-Social";
+			productReference = 83124710400FDE4C70E513A7048134A8 /* Pods_Strana_Social.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		20CEDE02926A17791E55F4E066E928B1 /* Pods-Strana-SocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6666DBBA4438C8EF9176158DBF2E901F /* Build configuration list for PBXNativeTarget "Pods-Strana-SocialTests" */;
+			buildPhases = (
+				EC4F02D4418BCCE1BB6FE2EC7AF07BC7 /* Sources */,
+				BA38B018FF3EAC21FF06038D13608045 /* Frameworks */,
+				1D21C275026B4CC5D9D1F50EB1DF6C44 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Strana-SocialTests";
+			productName = "Pods-Strana-SocialTests";
+			productReference = 860C74FB62067F5D65F6C98BD0B95894 /* Pods_Strana_SocialTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 17A6876C1816074FCED219127BC80727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E3D25C89D17C81DD8EED68E409A7339 /* Pods-Strana-Social */,
+				20CEDE02926A17791E55F4E066E928B1 /* Pods-Strana-SocialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05B6A15EB6A4F78FF203177324784DC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8EC37AE8FB03EE832D6247618FA17C /* Pods-Strana-Social-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4F02D4418BCCE1BB6FE2EC7AF07BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8229C37B0D32B3DA99386595D834D872 /* Pods-Strana-SocialTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02F175255B2C962D22EB7E3BE44B502A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A34B4C3F5584614D519AA87E49E5D2 /* Pods-Strana-SocialTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Strana-SocialTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Strana-SocialTests/Pods-Strana-SocialTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Strana_SocialTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		488CF430418C8EFC97844DFEE8E48FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D9F0329E74FEA7FA74623B4615EA437 /* Pods-Strana-SocialTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Strana-SocialTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Strana-SocialTests/Pods-Strana-SocialTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Strana_SocialTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A52789C20E1F4003AFE3F523961D0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4005E61E839AFE8BEF0D73D8F5B5C8E8 /* Pods-Strana-Social.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Strana-Social/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Strana-Social/Pods-Strana-Social.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Strana_Social;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A2FE92D935D2A9B9880D8C66CE097D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 002E5D18A7AAF7A35E824467DC242E0C /* Pods-Strana-Social.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Strana-Social/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Strana-Social/Pods-Strana-Social.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Strana_Social;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6666DBBA4438C8EF9176158DBF2E901F /* Build configuration list for PBXNativeTarget "Pods-Strana-SocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488CF430418C8EFC97844DFEE8E48FA8 /* Debug */,
+				02F175255B2C962D22EB7E3BE44B502A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA870FA4318A3D08DD0E35FC9AC20747 /* Build configuration list for PBXNativeTarget "Pods-Strana-Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A52789C20E1F4003AFE3F523961D0CA /* Debug */,
+				A2FE92D935D2A9B9880D8C66CE097D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
