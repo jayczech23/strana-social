@@ -11,6 +11,9 @@ target 'Strana-Social' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'IQKeyboardManagerSwift'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
   target 'Strana-SocialTests' do
     inherit! :search_paths

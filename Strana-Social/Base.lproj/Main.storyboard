@@ -13,7 +13,7 @@
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInVC" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="Strana_Social" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -68,16 +68,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvf-mM-NvT" customClass="RoundBtn" customModule="Strana_Social" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvf-mM-NvT" userLabel="facebookBtn" customClass="RoundBtn" customModule="Strana_Social" customModuleProvider="target">
                                 <rect key="frame" x="112.5" y="210" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.30585482720000001" green="0.38999569420000002" blue="0.66275697950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="0Ec-WF-5dE"/>
                                     <constraint firstAttribute="height" constant="150" id="5NA-XL-sWQ"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="f">
+                                <state key="normal" image="f">
                                     <color key="titleColor" red="0.30585482716560364" green="0.38999569416046143" blue="0.66275697946548462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wfq-2m-YWR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Or..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4U-zW-Crm">
                                 <rect key="frame" x="166" y="376" width="42" height="21"/>
@@ -86,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eft-lr-fMY">
-                                <rect key="frame" x="46" y="426" width="283" height="113"/>
+                                <rect key="frame" x="46" y="426.5" width="283" height="113"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-HN-pxO" customClass="FancyField" customModule="Strana_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>

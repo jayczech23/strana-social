@@ -1,4 +1,29 @@
 PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FacebookShare (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKShareKit (~> 4.15)
+  - FBSDKCoreKit (4.16.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.16.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.16.1):
+    - FBSDKCoreKit
   - Firebase/Auth (3.7.1):
     - Firebase/Core
     - FirebaseAuth (= 3.0.5)
@@ -39,6 +64,9 @@ PODS:
   - IQKeyboardManagerSwift (4.0.6)
 
 DEPENDENCIES:
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -46,6 +74,13 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FacebookShare: 8e9ee8ea06505e6a1d3d719b0cc63e840fb8aaeb
+  FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
+  FBSDKLoginKit: 469a56cebe2e1ed62b1621d0b155970fd6aac2d8
+  FBSDKShareKit: 53af0239b5bd2ebf191f32f75991245a208cc982
   Firebase: be473484f0d515e72ffd04acf22f981773c23e58
   FirebaseAnalytics: 0533a00b681e08fd0b2cd0444b7ddf0ef9fd7a1a
   FirebaseAuth: 75a062bbf2d3c97d1e6e55bbc110e13a6853e25d
@@ -59,6 +94,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   IQKeyboardManagerSwift: b3015e819559ca76381f87a0833f44d178564603
 
-PODFILE CHECKSUM: dafbff8f587ee5c87e0d1dcbd25b0606129fc8c2
+PODFILE CHECKSUM: dc7515866e5f6616dcb276c1f897ed8274ab0011
 
 COCOAPODS: 1.1.0.rc.3

@@ -52,6 +52,7 @@
 		55ECAE0D1DF8B63A003EC018 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		55ECAE0F1DF8B90B003EC018 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		55ECAE111DF8BB75003EC018 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		55ECAE201DF8DAAF003EC018 /* Strana-Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Strana-Social.entitlements"; sourceTree = "<group>"; };
 		7BFD21CD1E3F49C8FD5DEC4F /* Pods-Strana-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strana-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Strana-Social/Pods-Strana-Social.release.xcconfig"; sourceTree = "<group>"; };
 		CF86EFE205B32609CCAAFA5C /* Pods_Strana_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Strana_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34A45521FF72226F7854759 /* Pods-Strana-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strana-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Strana-Social/Pods-Strana-Social.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 				55209E8A1DF7B59300811CF1 /* AppDelegate.swift */,
 				55209E961DF7B59300811CF1 /* Info.plist */,
 				55209EAA1DF7B5A500811CF1 /* GoogleService-Info.plist */,
+				55ECAE201DF8DAAF003EC018 /* Strana-Social.entitlements */,
 			);
 			path = "Strana-Social";
 			sourceTree = "<group>";
@@ -236,6 +238,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = UCEY2ZV2YM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					55209E9A1DF7B59300811CF1 = {
 						CreatedOnToolsVersion = 8.1;
@@ -527,7 +534,12 @@
 			baseConfigurationReference = D34A45521FF72226F7854759 /* Pods-Strana-Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Strana-Social/Strana-Social.entitlements";
 				DEVELOPMENT_TEAM = UCEY2ZV2YM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Strana-Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stranasocial.strana;
@@ -541,7 +553,12 @@
 			baseConfigurationReference = 7BFD21CD1E3F49C8FD5DEC4F /* Pods-Strana-Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Strana-Social/Strana-Social.entitlements";
 				DEVELOPMENT_TEAM = UCEY2ZV2YM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Strana-Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stranasocial.strana;
