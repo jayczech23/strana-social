@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eft-lr-fMY">
-                                <rect key="frame" x="46" y="426.5" width="283" height="113"/>
+                                <rect key="frame" x="46" y="426" width="283" height="113"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-HN-pxO" customClass="FancyField" customModule="Strana_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
@@ -110,6 +110,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKc-S7-sPw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -135,6 +138,10 @@
                             <constraint firstItem="eft-lr-fMY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="yCy-jx-ILG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="c9l-HN-pxO" id="l0v-hg-Cg5"/>
+                        <outlet property="passwordTxtField" destination="xEs-A9-p2y" id="toe-s8-dsa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
