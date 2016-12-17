@@ -14,6 +14,7 @@ target 'Strana-Social' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod ‘SwiftKeychainWrapper’
 
   target 'Strana-SocialTests' do
     inherit! :search_paths

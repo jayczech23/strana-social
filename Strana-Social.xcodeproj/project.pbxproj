@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550F58771E04CFDC00D623E5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550F58761E04CFDC00D623E5 /* FeedVC.swift */; };
 		55209E8B1DF7B59300811CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55209E8A1DF7B59300811CF1 /* AppDelegate.swift */; };
 		55209E8D1DF7B59300811CF1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55209E8C1DF7B59300811CF1 /* SignInVC.swift */; };
 		55209E901DF7B59300811CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55209E8E1DF7B59300811CF1 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		469F329990FB2D58EAE78F71 /* Pods-Strana-SocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strana-SocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Strana-SocialTests/Pods-Strana-SocialTests.release.xcconfig"; sourceTree = "<group>"; };
 		4BEF5F7DA896C649565E92F9 /* Pods-Strana-SocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strana-SocialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Strana-SocialTests/Pods-Strana-SocialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		550F58761E04CFDC00D623E5 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		55209E871DF7B59300811CF1 /* Strana-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Strana-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55209E8A1DF7B59300811CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55209E8C1DF7B59300811CF1 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				55209E8C1DF7B59300811CF1 /* SignInVC.swift */,
+				550F58761E04CFDC00D623E5 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				55209E8D1DF7B59300811CF1 /* SignInVC.swift in Sources */,
 				55ECAE0E1DF8B63A003EC018 /* RoundBtn.swift in Sources */,
 				55ECAE121DF8BB75003EC018 /* FancyButton.swift in Sources */,
+				550F58771E04CFDC00D623E5 /* FeedVC.swift in Sources */,
 				55209E8B1DF7B59300811CF1 /* AppDelegate.swift in Sources */,
 				5580296A1DF890B50090AD1B /* FancyView.swift in Sources */,
 				55ECAE0C1DF8B45A003EC018 /* Constants.swift in Sources */,
