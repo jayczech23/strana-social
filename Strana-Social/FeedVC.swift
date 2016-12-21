@@ -19,6 +19,9 @@ class FeedVC: UIViewController {
         
         
     }
+    
+//----------------------------------------------------------------
+    
     // Sign out of firebase and remove keychain.
     @IBAction func signOutTapped(_ sender: Any) {
         
@@ -29,5 +32,6 @@ class FeedVC: UIViewController {
         performSegue(withIdentifier: signOutSegue, sender: nil)
         
     }
-  
+//----------------------------------------------------------------
+    
 }
