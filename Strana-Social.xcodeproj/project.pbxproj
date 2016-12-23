@@ -16,6 +16,7 @@
 		55209EA01DF7B59300811CF1 /* Strana_SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55209E9F1DF7B59300811CF1 /* Strana_SocialTests.swift */; };
 		55209EAB1DF7B5A500811CF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55209EAA1DF7B5A500811CF1 /* GoogleService-Info.plist */; };
 		55335C9A1E0B275600C82127 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55335C991E0B275600C82127 /* PostCell.swift */; };
+		55335CA11E0C55CF00C82127 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55335CA01E0C55CF00C82127 /* DataService.swift */; };
 		5580296A1DF890B50090AD1B /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558029691DF890B50090AD1B /* FancyView.swift */; };
 		55DD2EB81E0A2BFC0056F349 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD2EB71E0A2BFC0056F349 /* CircleView.swift */; };
 		55ECAE0C1DF8B45A003EC018 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ECAE0B1DF8B45A003EC018 /* Constants.swift */; };
@@ -52,6 +53,7 @@
 		55209EA11DF7B59300811CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55209EAA1DF7B5A500811CF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		55335C991E0B275600C82127 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		55335CA01E0C55CF00C82127 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		558029691DF890B50090AD1B /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		55DD2EB71E0A2BFC0056F349 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		55ECAE0B1DF8B45A003EC018 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		55209E891DF7B59300811CF1 /* Strana-Social */ = {
 			isa = PBXGroup;
 			children = (
+				55335C9F1E0C55B400C82127 /* Services */,
 				55ECAE0A1DF8B44A003EC018 /* Util */,
 				558029661DF7BC800090AD1B /* Model */,
 				558029671DF7BC860090AD1B /* View */,
@@ -130,6 +133,14 @@
 				55209EA11DF7B59300811CF1 /* Info.plist */,
 			);
 			path = "Strana-SocialTests";
+			sourceTree = "<group>";
+		};
+		55335C9F1E0C55B400C82127 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				55335CA01E0C55CF00C82127 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		558029661DF7BC800090AD1B /* Model */ = {
@@ -404,6 +415,7 @@
 				55209E8D1DF7B59300811CF1 /* SignInVC.swift in Sources */,
 				55ECAE0E1DF8B63A003EC018 /* RoundBtn.swift in Sources */,
 				55ECAE121DF8BB75003EC018 /* FancyButton.swift in Sources */,
+				55335CA11E0C55CF00C82127 /* DataService.swift in Sources */,
 				550F58771E04CFDC00D623E5 /* FeedVC.swift in Sources */,
 				55209E8B1DF7B59300811CF1 /* AppDelegate.swift in Sources */,
 				5580296A1DF890B50090AD1B /* FancyView.swift in Sources */,

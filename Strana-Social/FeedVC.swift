@@ -36,7 +36,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 //----------------------------------------------------------------
     
-    
     @IBAction func signOutBtnTapped(_ sender: Any) {
         
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
