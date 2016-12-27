@@ -36,7 +36,7 @@ class DataService {
     var REF_USERS: FIRDatabaseReference {
         return _REF_USERS
     }
-    
+//-----------------------------------------------------------------
     // create DATABASE user. (not same as authentication user.)
     func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) {
         
@@ -44,6 +44,8 @@ class DataService {
         REF_USERS.child(uid).updateChildValues(userData)
         
     }
+//-----------------------------------------------------------------
+
     
 
 
@@ -57,7 +59,5 @@ class DataService {
 
 
 
-
-
-
+//-----------------------------------------------------------------
 }
