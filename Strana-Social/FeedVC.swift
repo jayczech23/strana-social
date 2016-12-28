@@ -12,13 +12,16 @@ import Firebase
 
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    @IBOutlet weak var captionTextField: FancyField!
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: CircleView!
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
+    var imageSelected = false
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,12 +105,47 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             
             imageAdd.image = image
+            imageSelected = true
+            
         } else {
             print("JAY: A valid image wasn't selected.")
         }
         
         imagePicker.dismiss(animated: true, completion: nil)
     }
+//----------------------------------------------------------------
+    @IBAction func postBtnTapped(_ sender: Any) {
+        
+        guard let caption = captionTextField.text, caption != "" else {
+            print("JAY: Caption must be entered.")
+            return
+        }
+        
+        guard let image = imageAdd.image, imageSelected == true else {
+            print("JAY: An image must be selected.")
+            return
+        }
+        
+        if let imageData = UIImageJPEGRepresentation(image, 0.2) {
+            
+            // unique identifier (random string of characters.)
+            let imageUid = NSUUID().uuidString
+            let metaData = FIRStorageMetadata()
+            metaData.contentType = "image/jpeg"
+            
+            DataService.ds.REF_POST_IMAGES.child(imageUid).put(imageData, metadata: metaData) { (metadata, error) in
+                if error != nil {
+                    print("JAY: Unable to upload image to Firebase Storage.")
+                } else {
+                    print("JAY: Successfully uploaded image to Firebase Storage.")
+                    let downloadUrl = metaData.downloadURL()?.absoluteString
+                }
+            }
+            
+        }
+        
+    }
+    
 //----------------------------------------------------------------
 }
 
