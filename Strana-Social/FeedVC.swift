@@ -130,15 +130,19 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             
             // unique identifier (random string of characters.)
             let imageUid = NSUUID().uuidString
-            let metaData = FIRStorageMetadata()
-            metaData.contentType = "image/jpeg"
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/jpeg"
             
-            DataService.ds.REF_POST_IMAGES.child(imageUid).put(imageData, metadata: metaData) { (metadata, error) in
+            DataService.ds.REF_POST_IMAGES.child(imageUid).put(imageData, metadata: metadata) { (metadata, error) in
                 if error != nil {
                     print("JAY: Unable to upload image to Firebase Storage.")
                 } else {
                     print("JAY: Successfully uploaded image to Firebase Storage.")
-                    let downloadUrl = metaData.downloadURL()?.absoluteString
+                    let downloadUrl = metadata?.downloadURL()?.absoluteString
+                    
+                    if let url = downloadUrl {
+                    self.postToFirebase(imageUrl: url)
+                    }
                 }
             }
             
@@ -146,6 +150,24 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
     }
     
+//----------------------------------------------------------------
+    // post user's data to Firebase DATABASE.
+    func postToFirebase(imageUrl: String) {
+    
+        let post: Dictionary<String, AnyObject> = [
+            "caption": captionTextField.text! as AnyObject,
+            "imageUrl": imageUrl as AnyObject,
+            "likes": 0 as AnyObject,
+        ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionTextField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+    
+    }
 //----------------------------------------------------------------
 }
 
