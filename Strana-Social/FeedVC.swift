@@ -11,17 +11,23 @@ import SwiftKeychainWrapper
 import Firebase
 
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imageAdd: CircleView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
         
         // set a listener for posts in database.
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
@@ -43,6 +49,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         })
     }
 //----------------------------------------------------------------
+   
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -74,5 +81,34 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
 //----------------------------------------------------------------
+    @IBAction func addImageTapped(_ sender: Any) {
+        
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
+//----------------------------------------------------------------
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            
+            imageAdd.image = image
+        } else {
+            print("JAY: A valid image wasn't selected.")
+        }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+//----------------------------------------------------------------
 }
+
+
+
+
+
+
+
+
+
+
+

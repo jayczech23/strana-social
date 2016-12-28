@@ -54,12 +54,5 @@ class Post {
         if let likes = postData["likes"] as? Int {
             self._likes = likes
         }
-        
-        
-        
     }
-    
-    
-    
-    
 }
