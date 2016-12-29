@@ -16,6 +16,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: CircleView!
+    @IBOutlet weak var currentUserImg: CircleView!
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
@@ -115,6 +116,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         imagePicker.dismiss(animated: true, completion: nil)
     }
 //----------------------------------------------------------------
+    
+    @IBAction func addProfilePictureTapped(_ sender: Any) {
+        
+        
+    }
+    
+ 
+    
+//----------------------------------------------------------------
     @IBAction func postBtnTapped(_ sender: Any) {
         
         guard let caption = captionTextField.text, caption != "" else {
@@ -124,6 +134,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         guard let image = imageAdd.image, imageSelected == true else {
             print("JAY: An image must be selected.")
+            
             return
         }
         

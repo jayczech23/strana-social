@@ -8,6 +8,8 @@
 
 import Foundation
 import Firebase
+import FacebookCore
+import FacebookLogin
 import SwiftKeychainWrapper
 
 // root database url.
@@ -45,7 +47,7 @@ class DataService {
     
     var REF_USER_CURRENT: FIRDatabaseReference {
         // user id stored in keychain
-        let uid = KeychainWrapper.standard.string(forKey: KEY_UID) // might be a problem line.
+        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
         let user = REF_USERS.child(uid!)
         return user
     }
@@ -53,6 +55,9 @@ class DataService {
     var REF_POST_IMAGES: FIRStorageReference {
         return _REF_POST_IMAGES
     }
+    
+    //var profilePic =
+
     
     
 //-----------------------------------------------------------------
