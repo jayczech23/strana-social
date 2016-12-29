@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eft-lr-fMY">
-                                <rect key="frame" x="46" y="426.5" width="283" height="113"/>
+                                <rect key="frame" x="46" y="426" width="283" height="113"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-HN-pxO" customClass="FancyField" customModule="Strana_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
@@ -343,6 +343,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="2f0-Ya-CLR" id="CJ4-Le-MNy"/>
+                                            <outlet property="likeImage" destination="YSQ-Zw-VSQ" id="0fL-O3-pHF"/>
                                             <outlet property="likesLbl" destination="fU9-VN-uC7" id="NPc-T3-VV5"/>
                                             <outlet property="postImg" destination="Hcj-tu-GlV" id="HBQ-Ym-IoT"/>
                                             <outlet property="profileImg" destination="RX4-Hy-88v" id="eQa-Fc-xYT"/>
