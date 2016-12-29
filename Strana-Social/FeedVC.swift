@@ -11,7 +11,7 @@ import SwiftKeychainWrapper
 import Firebase
 
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIAlertViewDelegate {
     @IBOutlet weak var captionTextField: FancyField!
 
     @IBOutlet weak var tableView: UITableView!
@@ -112,19 +112,19 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         } else {
             print("JAY: A valid image wasn't selected.")
         }
-        
         imagePicker.dismiss(animated: true, completion: nil)
     }
 //----------------------------------------------------------------
     @IBAction func postBtnTapped(_ sender: Any) {
         
-        guard let caption = captionTextField.text, caption != "" else {
-            print("JAY: Caption must be entered.")
-            return
-        }
+//        guard let caption = captionTextField.text, caption != "" else {
+//            print("JAY: Caption must be entered.")
+//            return
+//        }
         
         guard let image = imageAdd.image, imageSelected == true else {
             print("JAY: An image must be selected.")
+            displayImageAlert()
             return
         }
         
@@ -171,7 +171,21 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     }
 //----------------------------------------------------------------
+    
+    func displayImageAlert() -> Void {
+        
+        let alertController = UIAlertController(title: noImageSelectedTitle, message: noImageSelectedMessage, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+//----------------------------------------------------------------
+    
 }
+
 
 
 

@@ -15,3 +15,7 @@ let KEY_UID = "uid"
 let feedSegue = "goToFeed"
 
 let signOutSegue = "goToSignIn"
+
+let noImageSelectedTitle = "No Image"
+
+let noImageSelectedMessage = "Please select an image to post."

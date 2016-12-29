@@ -101,17 +101,8 @@ class PostCell: UITableViewCell {
     }
 
 //----------------------------------------------------------------
+
     
-    func getProfPic(fid: String) -> UIImage? {
-        if (fid != "") {
-            var imgURLString = "http://graph.facebook.com/" + fid + "/picture?type=normal" //type=normal
-            var imgURL = NSURL(string: imgURLString)
-            var imageData = NSData(contentsOf: imgURL! as URL)
-            var image = UIImage(data: imageData! as Data)
-            return image
-        }
-        return nil
-    }
 //----------------------------------------------------------------
     
 }
