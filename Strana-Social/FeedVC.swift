@@ -116,12 +116,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         imagePicker.dismiss(animated: true, completion: nil)
     }
 //----------------------------------------------------------------
-    
-    @IBAction func addProfilePictureTapped(_ sender: Any) {
-        
-        
-    }
-    
+
  
     
 //----------------------------------------------------------------
@@ -134,7 +129,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         guard let image = imageAdd.image, imageSelected == true else {
             print("JAY: An image must be selected.")
-            
+            self.displayImageAlert()
             return
         }
         
@@ -181,6 +176,36 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     }
 //----------------------------------------------------------------
+    
+    func displayImageAlert() -> Void {
+        
+        let alertController = UIAlertController(title: noImageSelectedTitle, message: noImageSelectedMessage, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+
+//----------------------------------------------------------------
+    @IBAction func currentUserImgTapped(_ sender: Any) {
+        
+        let alertA = UIAlertController(title: "Profile Picture", message: "Select a profile picture", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default) { (okAction) in
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        
+        alertA.addAction(okAction)
+        alertA.addAction(cancelAction)
+        
+        self.present(alertA, animated: true, completion: nil)
+        
+    }
+//----------------------------------------------------------------    
 }
 
 

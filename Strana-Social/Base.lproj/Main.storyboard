@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eft-lr-fMY">
-                                <rect key="frame" x="46" y="426.5" width="283" height="113"/>
+                                <rect key="frame" x="46" y="426" width="283" height="113"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-HN-pxO" customClass="FancyField" customModule="Strana_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
@@ -186,7 +186,7 @@
                                         <color key="textColor" red="0.82289439440000001" green="0.29112985730000002" blue="0.12920525669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promo" translatesAutoresizingMaskIntoConstraints="NO" id="ezs-xr-0xJ" customClass="CircleView" customModule="Strana_Social" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promo" translatesAutoresizingMaskIntoConstraints="NO" id="ezs-xr-0xJ" customClass="CircleView" customModule="Strana_Social" customModuleProvider="target">
                                         <rect key="frame" x="325" y="12" width="42" height="42"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -194,7 +194,7 @@
                                             <constraint firstAttribute="width" constant="42" id="tD8-m8-4CN"/>
                                         </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="it0-Hc-a0R" appends="YES" id="b6c-QZ-NtQ"/>
+                                            <outletCollection property="gestureRecognizers" destination="t7s-eu-ria" appends="YES" id="aOU-Md-5HN"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -394,9 +394,9 @@
                         <action selector="addImageTapped:" destination="bBi-gc-9WG" id="SyY-GT-MJz"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="it0-Hc-a0R">
+                <tapGestureRecognizer id="t7s-eu-ria">
                     <connections>
-                        <action selector="addProfilePictureTapped:" destination="bBi-gc-9WG" id="HiN-hC-EW8"/>
+                        <action selector="currentUserImgTapped:" destination="bBi-gc-9WG" id="ZIR-h1-6iv"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
