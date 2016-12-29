@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import FacebookCore
+import FacebookLogin
 
 class PostCell: UITableViewCell {
 
@@ -38,6 +40,14 @@ class PostCell: UITableViewCell {
         likesRef = DataService.ds.REF_USER_CURRENT.child("likes").child(post.postKey)
         self.caption.text = post.caption
         self.likesLbl.text = "\(post.likes)"
+        
+        // attempt to set profile picture from Facebook.
+        // get user profile picture
+        // function
+       // getProfPic(fid: )
+        
+        
+        
         
         // download and cache images
         if image != nil {
@@ -91,6 +101,19 @@ class PostCell: UITableViewCell {
     }
 
 //----------------------------------------------------------------
+    
+    func getProfPic(fid: String) -> UIImage? {
+        if (fid != "") {
+            var imgURLString = "http://graph.facebook.com/" + fid + "/picture?type=normal" //type=normal
+            var imgURL = NSURL(string: imgURLString)
+            var imageData = NSData(contentsOf: imgURL! as URL)
+            var image = UIImage(data: imageData! as Data)
+            return image
+        }
+        return nil
+    }
+//----------------------------------------------------------------
+    
 }
 
 

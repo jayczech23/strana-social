@@ -50,8 +50,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 }
             
             }
-            
+            self.posts.reverse()
             self.tableView.reloadData()
+            
         })
     }
 //----------------------------------------------------------------
