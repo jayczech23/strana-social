@@ -21,6 +21,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
     var imageSelected = false
+    var printUser: String!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
     
     
@@ -55,6 +56,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             self.tableView.reloadData()
         })
     }
+        
 //----------------------------------------------------------------
    
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -117,9 +119,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
 //----------------------------------------------------------------
 
- 
-    
-//----------------------------------------------------------------
+
     @IBAction func postBtnTapped(_ sender: Any) {
         
         guard let caption = captionTextField.text, caption != "" else {
@@ -206,6 +206,47 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
     }
 //----------------------------------------------------------------    
+    
+    // algorithm to upload and download user profile photo from FIREBASE STORAGE.
+//    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+//        userPhoto.image = image
+//        dismissViewControllerAnimated(true, completion: nil)
+//        var data = NSData()
+//        data = UIImageJPEGRepresentation(userPhoto.image!, 0.8)!
+//        // set upload path
+//        let filePath = "\(FIRAuth.auth()!.currentUser!.uid)/\("userPhoto")"
+//        let metaData = FIRStorageMetadata()
+//        metaData.contentType = "image/jpg"
+//        self.storageRef.child(filePath).putData(data, metadata: metaData){(metaData,error) in
+//            if let error = error {
+//                print(error.localizedDescription)
+//                return
+//            }else{
+//                //store downloadURL
+//                let downloadURL = metaData!.downloadURL()!.absoluteString
+//                //store downloadURL at database
+//                self.databaseRef.child("users").child(FIRAuth.auth()!.currentUser!.uid).updateChildValues(["userPhoto": downloadURL])
+//            }
+//            
+//        }
+//    }
+    
+    // check if user has profile photo or might crash
+//    databaseRef.child("users").child(userID!).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+//    // check if user has photo
+//    if snapshot.hasChild("userPhoto"){
+//    // set image location
+//    let filePath = "\(userID!)/\("userPhoto")"
+//    // Assuming a < 10MB file, though you can change that
+//    self.storageRef.child(filePath).dataWithMaxSize(10*1024*1024, completion: { (data, error) in
+//    
+//    let userPhoto = UIImage(data: data!)
+//    self.userPhoto.image = userPhoto
+//    })
+//    }
+//    })
+    
+    
 }
 
 
