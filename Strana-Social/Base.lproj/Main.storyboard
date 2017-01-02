@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NnU-VQ-lvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eft-lr-fMY">
-                                <rect key="frame" x="46" y="426" width="283" height="113"/>
+                                <rect key="frame" x="46" y="426.5" width="283" height="113"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-HN-pxO" customClass="FancyField" customModule="Strana_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
@@ -386,6 +386,8 @@
                         <outlet property="imageAdd" destination="mGP-5k-CnY" id="a2r-Ez-Kh9"/>
                         <outlet property="tableView" destination="UgZ-fn-9xK" id="TRl-tv-HC6"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="vGl-Zu-fhN"/>
+                        <segue destination="zD4-2k-ltB" kind="show" identifier="goToNewUserVC" id="IPW-Sa-4sN"/>
+                        <segue destination="NnU-VQ-lvc" kind="show" identifier="goToRegisteredUsersVC" id="RZj-t7-PUh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmQ-D2-7Yn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -402,14 +404,226 @@
             </objects>
             <point key="canvasLocation" x="928.79999999999995" y="122.78860569715144"/>
         </scene>
+        <!--Registered UserVC-->
+        <scene sceneID="eUn-k9-jJA">
+            <objects>
+                <viewController id="NnU-VQ-lvc" customClass="RegisteredUserVC" customModule="Strana_Social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kbz-u1-rhO"/>
+                        <viewControllerLayoutGuide type="bottom" id="9g4-6I-eyt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xca-O8-IMO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back Khaleesi235!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEU-gH-HN0">
+                                <rect key="frame" x="3" y="35" width="368" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="NTN-So-ws8"/>
+                                    <constraint firstAttribute="height" constant="39" id="wml-qZ-TYj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="khaleesi" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-2y-rcX" customClass="CircleView" customModule="Strana_Social" customModuleProvider="target">
+                                <rect key="frame" x="66" y="107" width="243" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="5BT-LT-jG1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="243" id="DmE-tR-zjK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="243" id="d8A-J4-EPv"/>
+                                    <constraint firstAttribute="height" constant="243" id="err-cT-kEm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to do?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dho-SX-U5Y">
+                                <rect key="frame" x="20" y="375" width="334" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="334" id="uQp-VU-Hs9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDu-PP-19S">
+                                <rect key="frame" x="59" y="426" width="256" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Zj6-ei-JWe"/>
+                                    <constraint firstAttribute="width" constant="256" id="gGd-SM-Cnm"/>
+                                    <constraint firstAttribute="height" constant="40" id="ke8-s0-SXE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="256" id="xjk-f7-Ttt"/>
+                                </constraints>
+                                <state key="normal" image="View Likes Copy@1x"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQQ-ZQ-Rct">
+                                <rect key="frame" x="59" y="483" width="256" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="2VW-pP-M4q"/>
+                                    <constraint firstAttribute="height" constant="40" id="vuz-hZ-L3S"/>
+                                </constraints>
+                                <state key="normal" image="View Likes@1x"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVT-wF-kVX">
+                                <rect key="frame" x="59" y="569" width="256" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9cn-PJ-EMW"/>
+                                    <constraint firstAttribute="width" constant="256" id="EJ4-dy-Yt2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="256" id="HyM-IJ-DiE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="oN8-Ec-YTZ"/>
+                                </constraints>
+                                <state key="normal" image="Start Posting Button@1x"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strana-logo-S" translatesAutoresizingMaskIntoConstraints="NO" id="sFz-1J-W6i">
+                                <rect key="frame" x="161" y="622" width="52" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="abU-yt-TSu"/>
+                                    <constraint firstAttribute="height" constant="37" id="xUs-od-c7B"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25998961929999997" green="0.8249545693" blue="0.86513954400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FEU-gH-HN0" firstAttribute="top" secondItem="Kbz-u1-rhO" secondAttribute="bottom" constant="15" id="5jv-0v-qNJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4fd-2y-rcX" secondAttribute="trailing" constant="50" id="ET4-Ea-Iwt"/>
+                            <constraint firstItem="Dho-SX-U5Y" firstAttribute="leading" secondItem="Xca-O8-IMO" secondAttribute="leadingMargin" constant="4" id="FWN-xR-baL"/>
+                            <constraint firstItem="Dho-SX-U5Y" firstAttribute="centerX" secondItem="Xca-O8-IMO" secondAttribute="centerX" id="Iku-Uk-8Zy"/>
+                            <constraint firstItem="FEU-gH-HN0" firstAttribute="centerX" secondItem="Xca-O8-IMO" secondAttribute="centerX" id="Q0O-w5-UTG"/>
+                            <constraint firstItem="tDu-PP-19S" firstAttribute="top" secondItem="Dho-SX-U5Y" secondAttribute="bottom" constant="18" id="QDq-7M-kW6"/>
+                            <constraint firstItem="PQQ-ZQ-Rct" firstAttribute="top" secondItem="tDu-PP-19S" secondAttribute="bottom" constant="17" id="U3f-Kg-nzB"/>
+                            <constraint firstItem="4fd-2y-rcX" firstAttribute="centerX" secondItem="Xca-O8-IMO" secondAttribute="centerX" id="Zcx-lS-8dF"/>
+                            <constraint firstItem="bVT-wF-kVX" firstAttribute="top" secondItem="PQQ-ZQ-Rct" secondAttribute="bottom" constant="46" id="dGN-5g-Iqr"/>
+                            <constraint firstItem="sFz-1J-W6i" firstAttribute="centerX" secondItem="Xca-O8-IMO" secondAttribute="centerX" id="drM-Q7-eDM"/>
+                            <constraint firstItem="Dho-SX-U5Y" firstAttribute="top" secondItem="4fd-2y-rcX" secondAttribute="bottom" constant="25" id="iBm-vl-Rvi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dho-SX-U5Y" secondAttribute="trailing" constant="5" id="iX5-OW-azC"/>
+                            <constraint firstItem="bVT-wF-kVX" firstAttribute="centerX" secondItem="Xca-O8-IMO" secondAttribute="centerX" id="sTX-os-hLB"/>
+                            <constraint firstItem="sFz-1J-W6i" firstAttribute="top" secondItem="bVT-wF-kVX" secondAttribute="bottom" constant="13" id="uxH-yX-JNu"/>
+                            <constraint firstItem="4fd-2y-rcX" firstAttribute="top" secondItem="FEU-gH-HN0" secondAttribute="bottom" constant="33" id="wHB-4G-xaw"/>
+                            <constraint firstItem="4fd-2y-rcX" firstAttribute="leading" secondItem="Xca-O8-IMO" secondAttribute="leadingMargin" constant="50" id="wKt-Qe-Fud"/>
+                            <constraint firstItem="tDu-PP-19S" firstAttribute="centerX" secondItem="Xca-O8-IMO" secondAttribute="centerX" id="wqS-O5-V5o"/>
+                            <constraint firstItem="PQQ-ZQ-Rct" firstAttribute="centerX" secondItem="Xca-O8-IMO" secondAttribute="centerX" id="xvw-NC-9Iq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="bBi-gc-9WG" kind="show" identifier="goBackFromRegUser" id="lvx-zu-x9v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RC9-jl-boi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="311.69415292353824"/>
+        </scene>
+        <!--NewuserVC-->
+        <scene sceneID="jiz-Ur-TPR">
+            <objects>
+                <viewController id="zD4-2k-ltB" customClass="NewuserVC" customModule="Strana_Social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lBl-0j-7gM"/>
+                        <viewControllerLayoutGuide type="bottom" id="EXU-D9-ET0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jjf-Wv-MSu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Strana Social" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b34-gk-ExS">
+                                <rect key="frame" x="16" y="46" width="344" height="39"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="khaleesi" translatesAutoresizingMaskIntoConstraints="NO" id="fgk-hP-SG5" customClass="CircleView" customModule="Strana_Social" customModuleProvider="target">
+                                <rect key="frame" x="66.5" y="106" width="243" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="LYw-5j-NzY"/>
+                                    <constraint firstAttribute="width" constant="243" id="e9h-0a-Cxn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VP6-c4-2rY">
+                                <rect key="frame" x="39" y="381" width="299" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="6E6-eK-L98"/>
+                                    <constraint firstAttribute="width" constant="299" id="Duz-FS-CLT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KjA-tn-jCC">
+                                <rect key="frame" x="59.5" y="435" width="256" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="GNi-Fh-ids"/>
+                                    <constraint firstAttribute="height" constant="41" id="Pzg-ry-efz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is what other users will know you as." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3A-y2-SCz">
+                                <rect key="frame" x="44" y="492" width="287" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="tDc-h5-O4O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lab-yJ-8I0">
+                                <rect key="frame" x="60" y="557" width="256" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="chf-4L-DoG"/>
+                                    <constraint firstAttribute="width" constant="256" id="idr-c3-g4n"/>
+                                </constraints>
+                                <state key="normal" image="Start Posting Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strana-logo-S" translatesAutoresizingMaskIntoConstraints="NO" id="eRG-W5-Hfq">
+                                <rect key="frame" x="156" y="613" width="64" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="e9N-2A-eOd"/>
+                                    <constraint firstAttribute="height" constant="46" id="zwu-zR-nIb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25998961925506592" green="0.8249545693397522" blue="0.86513954401016235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b34-gk-ExS" firstAttribute="top" secondItem="lBl-0j-7gM" secondAttribute="bottom" constant="26" id="3zC-7U-Oyd"/>
+                            <constraint firstItem="fgk-hP-SG5" firstAttribute="top" secondItem="b34-gk-ExS" secondAttribute="bottom" constant="21" id="4eB-ON-x10"/>
+                            <constraint firstItem="KjA-tn-jCC" firstAttribute="centerX" secondItem="Jjf-Wv-MSu" secondAttribute="centerX" id="7c9-jg-80A"/>
+                            <constraint firstItem="fgk-hP-SG5" firstAttribute="centerX" secondItem="Jjf-Wv-MSu" secondAttribute="centerX" id="Nym-Lu-cat"/>
+                            <constraint firstItem="b34-gk-ExS" firstAttribute="leading" secondItem="Jjf-Wv-MSu" secondAttribute="leading" constant="16" id="OoW-9d-1sl"/>
+                            <constraint firstItem="KjA-tn-jCC" firstAttribute="top" secondItem="VP6-c4-2rY" secondAttribute="bottom" constant="15" id="XSz-ye-49R"/>
+                            <constraint firstItem="eRG-W5-Hfq" firstAttribute="top" secondItem="lab-yJ-8I0" secondAttribute="bottom" constant="16" id="Zhk-Oo-70b"/>
+                            <constraint firstItem="lab-yJ-8I0" firstAttribute="top" secondItem="P3A-y2-SCz" secondAttribute="bottom" constant="45.5" id="aHs-6Y-j7g"/>
+                            <constraint firstItem="VP6-c4-2rY" firstAttribute="top" secondItem="fgk-hP-SG5" secondAttribute="bottom" constant="32" id="axP-2r-zpH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VP6-c4-2rY" secondAttribute="trailing" constant="21" id="gFX-kI-BF5"/>
+                            <constraint firstItem="P3A-y2-SCz" firstAttribute="centerX" secondItem="Jjf-Wv-MSu" secondAttribute="centerX" id="gHc-km-u4b"/>
+                            <constraint firstItem="VP6-c4-2rY" firstAttribute="leading" secondItem="Jjf-Wv-MSu" secondAttribute="leadingMargin" constant="23" id="i5y-dN-xy2"/>
+                            <constraint firstItem="P3A-y2-SCz" firstAttribute="top" secondItem="KjA-tn-jCC" secondAttribute="bottom" constant="16" id="lJV-hy-VQp"/>
+                            <constraint firstItem="eRG-W5-Hfq" firstAttribute="centerX" secondItem="Jjf-Wv-MSu" secondAttribute="centerX" id="mcS-0s-VIL"/>
+                            <constraint firstAttribute="trailing" secondItem="b34-gk-ExS" secondAttribute="trailing" constant="15" id="pq1-XK-Kea"/>
+                            <constraint firstItem="lab-yJ-8I0" firstAttribute="centerX" secondItem="Jjf-Wv-MSu" secondAttribute="centerX" id="rHP-GS-dXL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="bBi-gc-9WG" kind="show" identifier="userSetupComplete" id="Fy0-2B-Sp6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWT-nr-zcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="-422"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Start Posting Button" width="256" height="40"/>
+        <image name="Start Posting Button@1x" width="256" height="40"/>
+        <image name="View Likes Copy@1x" width="256" height="40"/>
+        <image name="View Likes@1x" width="256" height="40"/>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
+        <image name="khaleesi" width="205" height="218"/>
         <image name="malcolmX" width="2724" height="1532"/>
         <image name="promo" width="480" height="474"/>
         <image name="strana-logo-S" width="284" height="284"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lvx-zu-x9v"/>
+    </inferredMetricsTieBreakers>
 </document>

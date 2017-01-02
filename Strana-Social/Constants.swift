@@ -16,6 +16,16 @@ let feedSegue = "goToFeed"
 
 let signOutSegue = "goToSignIn"
 
+let newUserSegue = "goToNewUserVC"
+
+let regUserSegue = "goToRegisteredUsersVC"
+
+let newUsrSetupCompleteSegue = "userSetupComplete"
+
+let regUserBackToFeedSegue = "goBackFromRegUser"
+
 let noImageSelectedTitle = "No Image Selected"
 
 let noImageSelectedMessage = "Please select an image to make a post."
+
+
