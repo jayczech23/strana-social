@@ -1,0 +1,6 @@
+framework module Pods_Strana_SocialTests {
+  umbrella header "Pods-Strana-SocialTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
